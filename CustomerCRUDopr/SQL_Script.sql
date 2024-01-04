@@ -1,0 +1,19 @@
+USE [CustomerCrud]
+GO
+/****** Object:  Table [dbo].[Customer1]    Script Date: 04-01-2024 22:29:31 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Customer1](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nchar](10) NULL,
+	[LastName] [nchar](10) NULL,
+	[Email] [nchar](50) NULL,
+	[Mobile] [bigint] NULL,
+ CONSTRAINT [PK_Customer1] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
